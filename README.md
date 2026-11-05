@@ -37,8 +37,6 @@ orientation sensors.
 The whole app is native C++ (NativeActivity + OpenGL ES 3 + Dear ImGui). A thin Java layer handles USB permission,
 Camera2, sensors, GPS and the Android file picker.
 
-> Made by **YC1RUH** to help aviation monitoring.
-
 ## Screenshots
 
 | Screenshot | Description |
@@ -133,9 +131,6 @@ Import maps columns by header name. It also accepts the aliases `hex`, `flight`,
 | [libusb](https://github.com/libusb/libusb) via [libusb-cmake](https://github.com/ankurvdev/libusb-cmake) | USB access (`NO_DEVICE_DISCOVERY` mode) | LGPL-2.1 |
 | [dump978 (ankurvdev fork)](https://github.com/ankurvdev/dump978) | UAT decoder (legacy) | see `third_party/libadsb/dump978/LICENSE` |
 | [Dear ImGui](https://github.com/ocornut/imgui) | User interface | MIT |
-
-libadsb is vendored at commit `1d5707d` with three small Android stability patches. They are documented in
-[`PATCHES.md`](app/src/main/cpp/third_party/libadsb/PATCHES.md).
 
 > **Note:** the upstream libadsb repository does not include a license file. Check with its author before
 > distributing binaries publicly. Because rtl-sdr is GPL-2.0, a distributed APK must also comply with the GPL.
